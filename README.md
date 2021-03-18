@@ -1,2 +1,3 @@
 # BBBpredictor
-Predict blood–brain barrier (BBB) permeability of a compound
+Predict blood–brain barrier (BBB) permeability of compounds.
+
