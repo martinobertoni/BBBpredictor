@@ -1,24 +1,8 @@
-In order to create the image and run the container:
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/5286)
 
-### Go to the singularity folder
-`cd singularity`
+# Blood-brain barrier (BBB) predictor:
 
-#### Build the image
-`sudo singularity build BBBpredictor.sif BBBpredictor.def`
-
-### You're ready to run the container as any executable on the example input file provided in the singularity/TEST folder
-
-`./BBBpredictor.sif ../TEST/test_file_2.tsv`
-
-It can also be run using the singularity `run` command:
-
-`singularity run BBBpredictor.sif ../TEST/test_file_2.tsv`
-
-### Usage:
-```
-Blood-brain barrier (BBB) predictor:
-------------------------------------
-Classifier that will predict if a chemical coumpound will pass the Blood-brain barrier.
+Classifier that will predict if a chemical coumpound will pass the blood-brain barrier.
 SBNB lab (IRB Barcelona) - Nov 2020.
 
 USAGE: BBBpredictor myfile.tsv [SMILES or INCHI]
@@ -32,8 +16,12 @@ NOTE: Lines starting with '#' as well as empty lines are ignored.
 
 OUTPUT: tsv file containing the prediction for each compound.
 
-PREDICTION LEGEND: passes the BBB?
+PREDICTION LEGEND: the molecule pass the BBB?
+
 0: no
+
 1: yes
+
 -1: the molecular signature could not be calculated for this coumpound
-```
+
+
